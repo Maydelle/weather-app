@@ -1,0 +1,73 @@
+body {
+  font-family: "Saira", sans-serif;
+  background: #99b0c2;
+}
+h1 {
+  font-size: 42px;
+  margin: 0 auto;
+}
+hr {
+  opacity: 0.4;
+}
+footer {
+  font-size: 14px;
+  color: grey;
+  text-align: center;
+  margin-top: 20px;
+}
+strong {
+  color: #cb007b;
+}
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #d6e3ed;
+  border-radius: 8px;
+  padding: 20px 30px;
+}
+.form-group {
+  text-align: center;
+  margin: 15px auto 30px;
+}
+.search-box,
+.search-button {
+  height: 60px;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  font-size: 15px;
+}
+.search-box {
+  background: #f9f7fe;
+  width: 70%;
+}
+.search-button {
+  background: #885df1;
+  color: white;
+  width: 20%;
+  transition: all 200ms ease-in-out;
+}
+.search-button:hover {
+  background: rgba(136, 93, 241, 0.3);
+  color: #885df1;
+}
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+  font-size: 35px;
+  position: relative;
+  top: -6px;
+}
+.actual-temp {
+  font-size: 68px;
+  font-weight: 600;
+}
+
+.degrees {
+  font-size: 32px;
+  position: relative;
+  top: -25px;
+}
