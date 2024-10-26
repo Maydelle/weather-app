@@ -3,10 +3,14 @@ function displayTemperature(response) {
   let cityElement = document.querySelector("#chosen-city");
   let temperature = Math.round(response.data.temperature.current);
   let currentConditionElement = document.querySelector("#current-condition");
+  let currentHumidityElement = document.querySelector("#humidity");
+  let currentWindSpeedElement = document.querySelector("#wind-speed");
 
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
   currentConditionElement.innerHTML = response.data.condition.description;
+  currentHumidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  currentWindSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
 }
 
 function search(event) {
