@@ -5,12 +5,16 @@ function displayTemperature(response) {
   let currentConditionElement = document.querySelector("#current-condition");
   let currentHumidityElement = document.querySelector("#humidity");
   let currentWindSpeedElement = document.querySelector("#wind-speed");
+  let weatherEmojiElement = document.querySelector("#emoji-image");
+  let emojiIconElement = document.querySelector("#icon");
 
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
   currentConditionElement.innerHTML = response.data.condition.description;
   currentHumidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   currentWindSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
+  weatherEmojiElement.src = response.data.condition.icon_url;
+  emojiIconElement.innerHTML = "";
 }
 
 function search(event) {
