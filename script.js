@@ -14,7 +14,7 @@ function displayTemperature(response) {
   currentHumidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   currentWindSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   weatherEmojiElement.src = response.data.condition.icon_url;
-  emojiIconElement.innerHTML = " ";
+  emojiIconElement.innerHTML = "";
 }
 
 function search(event) {
