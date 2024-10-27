@@ -56,9 +56,6 @@ strong {
   justify-content: space-between;
   align-items: center;
 }
-/* #emoji-image {
-  display: none;
-} */
 .emoji-image {
   width: 70px;
   height: auto;
